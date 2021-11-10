@@ -1,0 +1,51 @@
+# Test run 23/3 2020
+# Quartus 19.1
+
+Version = 9.4.2
+Number of tasks bits = 3
+Number of semaphore bits = 3
+starting tests 
+Test 001, all tasks created passed 
+Test 002, testing task_delete passed 
+Test 003, testing task_block passed
+Test 004, testing all tasks started in priority order, passed. 
+Test 005, testing task_start, passed. 
+Test 006, testing sem_take and sem_release passed 
+5 
+4 
+6 
+3 
+7 
+2 
+1 
+test 007, testing flags passed 
+Test 008, testing time management passed
+Test 009 testing delay passed
+Test 010, testing task_change_prio passed 
+Test 011, testing other task_block passed
+Idle
+  info.state_info = 2
+  info.priority = 0
+Task1
+  info.state_info = 0
+  info.priority = 7
+Task2
+  info.state_info = 2
+  info.priority = 6
+Task3
+  info.state_info = 1
+  info.priority = 5
+Idle
+  info.state_info = 2
+  info.priority = 0
+Task1
+  info.state_info = 0
+  info.priority = 1
+Task2
+  info.state_info = 3
+  info.priority = 6
+Task3
+  info.state_info = 1
+  info.priority = 5
+Test 012 testing change same task prio passed
+All tests passed without errors
