@@ -1,0 +1,19 @@
+	component Range_finder is
+		port (
+			clk_clk            : in  std_logic                    := 'X';             -- clk
+			distance_in_export : in  std_logic_vector(8 downto 0) := (others => 'X'); -- export
+			ext_irq_export     : in  std_logic_vector(1 downto 0) := (others => 'X'); -- export
+			key_in_export      : in  std_logic_vector(1 downto 0) := (others => 'X'); -- export
+			reset_reset_n      : in  std_logic                    := 'X';             -- reset_n
+			servo_pos_export   : out std_logic;                                       -- export
+			sw_in_export       : in  std_logic_vector(7 downto 0) := (others => 'X'); -- export
+			task_id_export     : out std_logic_vector(2 downto 0);                    -- export
+			vga_b_export       : out std_logic_vector(3 downto 0);                    -- export
+			vga_g_export       : out std_logic_vector(3 downto 0);                    -- export
+			vga_hs_export      : out std_logic;                                       -- export
+			vga_r_export       : out std_logic_vector(3 downto 0);                    -- export
+			vga_vs_export      : out std_logic;                                       -- export
+			wd_rst_export      : out std_logic                                        -- export
+		);
+	end component Range_finder;
+
